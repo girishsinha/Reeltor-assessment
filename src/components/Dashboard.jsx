@@ -1,5 +1,5 @@
 import React from "react";
-import InvestmentStats from "./investmentStats";
+import InvestmentStats from "./InvestmentStats";
 import NftMarketplace from "./NftMarketplace";
 import NFTsOwned from "./NFTsOwned";
 import MyPortfolio from "./MyPortfolio";
