@@ -7,9 +7,9 @@ const MyCards = () => {
 
   return (
     <div
-      className={`w-full h-full  ${
+      className={`sm:w-full h-full  ${
         mode ? "bg-white" : "bg-[#1C1A24]"
-      }  flex flex-col items-center p-6`}
+      }  flex flex-col items-center p-6 m-1 sm:m-0`}
     >
       <h1 className="test-base w-full font-[600] ">My Card</h1>
       <img src="card.svg" alt="card" className="h-50" />

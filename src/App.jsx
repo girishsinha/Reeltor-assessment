@@ -13,9 +13,9 @@ function App() {
   return (
     <>
       <div
-        className={`block sm:flex w-[100%] ${
+        className={`block sm:flex h-full w-[100%] ${
           mode ? "bg-[#fafafe] text-[#272727]" : "bg-[#0E0C18] text-white"
-        } relative`}
+        } relative overflow-scroll no-scrollbar`}
       >
         <SideBar openNav={openNav} setOpenNav={setOpenNav} />
 
@@ -31,12 +31,12 @@ function App() {
             >
               <button
                 onClick={() => setOpenNav(!openNav)}
-                className="sm:hidden"
+                className="sm:hidden "
               >
                 <img
                   src="ThreeDot.svg"
                   alt="button"
-                  className="p-1 h-8 aspect-square rounded-lg bg-gray-300 "
+                  className="p-1 h-8 aspect-square rounded-lg z-15 bg-gray-300 "
                 />
               </button>
               <h1 className="font-[Raleway] font-bold  text-[#5C5C5C] text-2xl">

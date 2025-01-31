@@ -3,7 +3,7 @@ import EtherIcon from "./EtherIcon";
 
 const NftMarketplace = () => {
   return (
-    <div className="sm:h-60 sm:w-110 h-50 w-100 relative ">
+    <div className="sm:h-60 sm:w-110 h-50 w-90 relative ">
       <div className="bg-gradient-to-t from-[#0000009C] to- z-5 h-full w-full absolute rounded-lg "></div>
       <img
         src="/marketplace.jpeg"

@@ -7,15 +7,15 @@ import { useEffect, useState, useRef } from "react";
 const SideBar = ({ openNav, setOpenNav }) => {
   const [darkMode, setDarkMode] = useState(false);
   const navRef = useRef(null);
-  const nanLinksRef = useRef(null);
+  // const nanLinksRef = useRef(null);
 
   const dispatch = useDispatch();
   const mode = useSelector((state) => state.mode.mode);
   // console.log(mode);
 
   useEffect(() => {
-    const nav = navRef.current;
-    const navLinks = nanLinksRef.current;
+    // const nav = navRef.current;
+    // const navLinks = nanLinksRef.current;
 
     // this function is for handale sidenavbar behaviour in the mobile screen
     // close the nav bar when click out side the nav
@@ -32,9 +32,10 @@ const SideBar = ({ openNav, setOpenNav }) => {
 
   return (
     <div
+      ref={navRef}
       className={`${
         openNav ? "-left-30" : "left-0"
-      } w-24 top-18 transition-discrete sm:flex z-11 fixed sm:static flex-col h-screen py-8  border-r-3    ${
+      } w-24 top-18 transition-discrete sm:flex z-11 fixed sm:static flex-col h-full py-8  border-r-3    ${
         mode ? "bg-white border-[#F5F3FB]" : "bg-[#1C1A24] border-[#282632]"
       }`}
     >
@@ -44,8 +45,8 @@ const SideBar = ({ openNav, setOpenNav }) => {
       </NavLink>
 
       {/* Navigation NavLinks */}
-      <nav ref={navRef} className="flex-1 py-6 ">
-        <ul ref={nanLinksRef} className=" flex flex-col gap-4">
+      <nav className="flex-1 py-6 ">
+        <ul className=" flex flex-col gap-4">
           <li>
             <NavLink
               to="/"

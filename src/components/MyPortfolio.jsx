@@ -93,7 +93,7 @@ const MyPortfolio = () => {
       <div
         className={` ${
           mode ? "bg-white" : "bg-[#1C1A24]"
-        } rounded-lg lg:w-160 px-6 font-[mulish] font-semibold`}
+        } rounded-lg lg:w-160 m-1 sm:m-0 px-6 font-[mulish] font-semibold`}
       >
         <span
           className="flex

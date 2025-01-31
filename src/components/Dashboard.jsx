@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 const Dashboard = () => {
   const mode = useSelector((state) => state.mode.mode);
   return (
-    <div className="flex flex-col xl:flex-row w-full justify-end">
+    <div className="flex flex-col xl:flex-row w-full justify-end items-center sm:items-start sm:p-0 py-20">
       <div className=" sm:w-[75%] w-full flex flex-col justify-center gap-2">
         <div className="flex flex-col lg:flex-row justify-around items-center">
           <div className="w-full/43">

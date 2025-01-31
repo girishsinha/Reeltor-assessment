@@ -8,52 +8,54 @@ const InvestmentStats = () => {
 
   return (
     <div
-      className={`flex justify-around sm:h-60 sm:w-110 ${
+      className={`flex justify-around sm:h-60 sm:w-110 h-50 w-90 ${
         mode ? "bg-white" : "bg-[#1C1A24]"
       } rounded-lg p-6`}
     >
       <div className="flex flex-col justify-around">
-        <div className="flex h-15 items-center ">
+        <div className="flex sm:h-15 h-12 items-center ">
           <img
             src="total investment.svg"
             alt="total investment"
             className="p-4  h-full rounded-lg aspect-square bg-[#FBB142]"
           />
           <div className="flex flex-col p-4">
-            <h3 className="font-medium text-base">Total Investement</h3>
+            <h3 className="font-medium sm:text-base text-sm">
+              Total Investement
+            </h3>
 
-            <span className="flex items-center  text-[#FBB142] text-lg font-[Mulish]">
-              <EtherIcon className="fill-[#FBB142] h-6 w-6 " />
+            <span className="flex items-center  text-[#FBB142] sm:text-lg text-base font-[Mulish]">
+              <EtherIcon className="fill-[#FBB142] sm:h-6 sm:w-6 " />
               <p>0.56 Ether</p>
             </span>
           </div>
         </div>
-        <div className="flex h-15 items-center ">
+        <div className="flex sm:h-15 h-12 items-center ">
           <img
             src="weekly return.svg"
             alt="weekly return"
             className="p-4  h-full rounded-lg aspect-square bg-[#4FDFB1]"
           />
           <div className="flex flex-col p-4">
-            <h3 className="font-medium text-base">Weekly returns</h3>
+            <h3 className="font-medium sm:text-base text-sm">Weekly returns</h3>
 
-            <span className="flex items-center  text-[#4FDFB1] text-lg font-[Mulish]">
-              <EtherIcon className="fill-[#4FDFB1] h-6 w-6 " />
+            <span className="flex items-center  text-[#4FDFB1] sm:text-lg text-base font-[Mulish]">
+              <EtherIcon className="fill-[#4FDFB1] sm:h-6 sm:w-6 " />
               <p>0.005 Ether</p>
             </span>
           </div>
         </div>
-        <div className="flex h-15 items-center ">
+        <div className="flex sm:h-15 h-12 items-center ">
           <img
             src="expenses.svg"
             alt="Expenses"
             className="p-4  h-full rounded-lg aspect-square bg-[#ED5B75]"
           />
           <div className="flex flex-col p-4">
-            <h3 className="font-medium text-base">Expenses</h3>
+            <h3 className="font-medium sm:text-base text-sm">Expenses</h3>
 
-            <span className="flex items-center  text-[#ED5B75] text-lg font-[Mulish] ">
-              <EtherIcon className="fill-[#ED5B75] h-6 w-6 " />
+            <span className="flex items-center  text-[#ED5B75] sm:text-lg text-base font-[Mulish] ">
+              <EtherIcon className="fill-[#ED5B75] sm:h-6 sm:w-6 " />
               <p>0.56 Ether</p>
             </span>
           </div>
