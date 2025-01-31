@@ -48,7 +48,7 @@ const SideBar = ({ openNav, setOpenNav }) => {
         <ul ref={nanLinksRef} className=" flex flex-col gap-4">
           <li>
             <NavLink
-              to="/Dashboard"
+              to="/"
               className={({ isActive }) =>
                 `flex items-center justify-center h-12 group border-[#ED5B75] w-full ${
                   isActive ? "border-l-4" : ""
@@ -64,7 +64,7 @@ const SideBar = ({ openNav, setOpenNav }) => {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/home"
               className={({ isActive }) =>
                 `flex items-center justify-center h-12 group border-[#ED5B75] w-full ${
                   isActive ? "border-l-4" : ""
